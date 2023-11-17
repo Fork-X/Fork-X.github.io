@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-    <title>不才才 bucaicai</title>
-    <meta name="description" content="95后青年，后端开发者，略懂前端, 学生，实习，缺乏社会的毒打">
+    <title>XFork</title>
+    <meta name="description" content="一个喜欢瞎捣鼓的人">
     <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="favicon.ico">
@@ -18,6 +18,11 @@
             alert('朋友，上古浏览器不支持呢~');
         }
     </script>
+
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/meting@latest/dist/Meting.min.js"></script>-->
+
 </head>
 
 <body>
@@ -47,13 +52,13 @@
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
                                 <img class="avatar-img"
-                                    src="https://cdn.jsdelivr.net/gh/laoxuai/assert/images/20200125221102.png"
+                                    src="static/images/1.png"
                                     alt="avatar">
-                                <div class="author-info__name">Bucaicai</div>
-                                <div class="author-info__description">95后青年，后端开发者，略懂前端, <s>学生，实习</s>，缺乏社会的毒打</div>
+                                <div class="author-info__name">XFork</div>
+                                <div class="author-info__description">99年，双鱼座, <s>缺乏社会的毒打</s></div>
                             </div>
                             <div class="card-info-social-icons is-center">
-                                <a class="social-icon" href="https://github.com/laoxuai" target="_blank">
+                                <a class="social-icon" href="https://github.com/Fork-X" target="_blank">
                                     <i class="fa fa-github"></i>
                                 </a>
                             </div>
@@ -101,8 +106,10 @@
                 <article id="page">
                     <div class="article-container">
                         <h2>音乐</h2>
-                        <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574197.html">
-                        </meting-js>
+<!--                        <meting-js auto="https://y.qq.com/n/yqq/playlist/7713574197.html">-->
+<!--                        </meting-js>-->
+                            <meting-js server="netease" type="playlist" id="7287263473">   <!-- 替换为你的网易云音乐歌单ID -->
+                            </meting-js>
                         <hr>
 
                         <h2>技能</h2>
@@ -188,6 +195,7 @@
     <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
     <!-- aplayer、meting -->
+
     <!-- require APlayer -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -211,7 +219,7 @@
     <script type="text/javascript">
         console.clear();
         console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
-        console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/laoxuai");
+        console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/Fork-X");
         console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
 
 
@@ -224,7 +232,7 @@
                         minSize: 10,
                         maxSize: 20,
                         newOn: 1000,
-                        flakeColor: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                        flakeColor: "#FFFFFF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
                     },
                     options = $.extend({}, defaults, options);
                 var interval = setInterval(function () {
@@ -253,7 +261,7 @@
             $.fn.snow({
                 minSize: 5, /* 定义雪花最小尺寸 */
                 maxSize: 50,/* 定义雪花最大尺寸 */
-                newOn: 800  /* 定义密集程度，数字越小越密集 */
+                newOn: 600  /* 定义密集程度，数字越小越密集 */
             });
         });
 
